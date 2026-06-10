@@ -28,7 +28,7 @@ while ($true) {
         $pushResult = & $gitPath push origin main 2>&1
         
         if ($LASTEXITCODE -eq 0) {
-            Write-Host "Successfully pushed to GitHub!" -ForegroundColor Emerald
+            Write-Host "Successfully pushed to GitHub!" -ForegroundColor Green
         } else {
             Write-Host "Push failed. Make sure you have authorized Git credentials." -ForegroundColor Red
             Write-Host $pushResult -ForegroundColor DarkGray
